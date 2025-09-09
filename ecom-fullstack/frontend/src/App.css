@@ -1,0 +1,44 @@
+/* ===== Header ===== */
+.app-header {
+  background-color: #427aa1; /* nice blue */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.app-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.app-nav a:hover {
+  color: #ffdd57; /* highlight on hover */
+  text-decoration: underline;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .app-nav {
+    margin-top: 10px;
+  }
+  .app-nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}

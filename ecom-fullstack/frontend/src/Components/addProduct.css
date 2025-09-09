@@ -1,0 +1,88 @@
+/* Container */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Form */
+.product-form,
+.edit-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-form input,
+.edit-form input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 150px;
+}
+
+.product-form button,
+.edit-form button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Buttons */
+.btn-add { background-color: #427aa1; color: white; }
+.btn-add:hover { background-color: #3d6e8e; }
+
+.btn-edit { background-color: #f0ad4e; color: white; margin-left: 10px; }
+.btn-edit:hover { background-color: #ec971f; }
+
+.btn-save { background-color: #28a745; color: white; }
+.btn-save:hover { background-color: #218838; }
+
+.btn-cancel { background-color: #dc3545; color: white; }
+.btn-cancel:hover { background-color: #c82333; }
+
+/* Product list */
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+/* Product info */
+.product-info {
+  font-weight: 500;
+}
+
+/* Message */
+.message {
+  color: green;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-form,
+  .edit-form { flex-direction: column; }
+  .product-list li { flex-direction: column; align-items: flex-start; }
+  .btn-edit, .btn-save, .btn-cancel { margin-top: 5px; margin-left: 0; }
+}
